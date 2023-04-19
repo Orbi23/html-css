@@ -1,26 +1,89 @@
-#main-heading {
-    color: blue;
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.header {
+    padding: 60px;
     text-align: center;
+    background: #84ff65;
+    color: #ff00ff;
+  }
+
+.navbar {
+    display: flex;
+    background-color: #73a85a;
+  }
+  
+.navbar a {
+    color: #000000;
+    padding: 1em 1.2em;
+    text-align: center;
+  }
+  
+.navbar a:hover {
+    background-color: #132c07;
+    color: #73a85a;
+  }
+  
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.side {
+    flex: 30%;
+    background-color: #c8cfc6;
+    padding: 20px;
+  }
+  
+.main {
+    flex: 70%;
+    background-color: #edeeec;
+    padding: 20px;
+  }
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #9e975a;
+  } 
+
+@media screen and (max-width: 600px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
+
+.galleryheader {
+    background:#dcffd3;
+    text-align: center;
+    padding: 2em;
 }
 
-p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: navy;
+.galleryrow {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.ingressi {
-    font-size: 1.1em;
-    margin: 10px auto;
-    border: 2px solid red;
-    padding: 10px 20px;
-    width: 80%;
+.gallerycolumn {
+    flex: 50%;
+    max-width: 50%;
 }
 
-.korostus {
-color: red;
-font-style: italic;
-}
+.gallerycolumn img {
+    padding: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    vertical-align: middle;
+  }
 
-.linkit li {
-    display: inline-block;
-}
+@media (max-width: 600px) {
+    .gallerycolumn {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
