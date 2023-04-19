@@ -10,9 +10,17 @@ p {
 
 .ingressi {
     font-size: 1.1em;
+    margin: 10px auto;
+    border: 2px solid red;
+    padding: 10px 20px;
+    width: 80%;
 }
 
 .korostus {
 color: red;
 font-style: italic;
+}
+
+.linkit li {
+    display: inline-block;
 }
